@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\UdayakuV\\Downloads\\CandidateCodeTest\\CandidateCodeTest\\CandidateCodeTest\\CandidateCodeTest.csproj": {}
+    "C:\\Users\\nisha\\source\\repos\\CodeTestNISHANT-SHARMA\\CandidateCodeTest\\CandidateCodeTest\\CandidateCodeTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\UdayakuV\\Downloads\\CandidateCodeTest\\CandidateCodeTest\\CandidateCodeTest\\CandidateCodeTest.csproj": {
+    "C:\\Users\\nisha\\source\\repos\\CodeTestNISHANT-SHARMA\\CandidateCodeTest\\CandidateCodeTest\\CandidateCodeTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UdayakuV\\Downloads\\CandidateCodeTest\\CandidateCodeTest\\CandidateCodeTest\\CandidateCodeTest.csproj",
+        "projectUniqueName": "C:\\Users\\nisha\\source\\repos\\CodeTestNISHANT-SHARMA\\CandidateCodeTest\\CandidateCodeTest\\CandidateCodeTest.csproj",
         "projectName": "CandidateCodeTest",
-        "projectPath": "C:\\Users\\UdayakuV\\Downloads\\CandidateCodeTest\\CandidateCodeTest\\CandidateCodeTest\\CandidateCodeTest.csproj",
-        "packagesPath": "C:\\Users\\UdayakuV\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UdayakuV\\Downloads\\CandidateCodeTest\\CandidateCodeTest\\CandidateCodeTest\\obj\\",
+        "projectPath": "C:\\Users\\nisha\\source\\repos\\CodeTestNISHANT-SHARMA\\CandidateCodeTest\\CandidateCodeTest\\CandidateCodeTest.csproj",
+        "packagesPath": "C:\\Users\\nisha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nisha\\Source\\Repos\\CodeTestNISHANT-SHARMA\\CandidateCodeTest\\CandidateCodeTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\UdayakuV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nisha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,11 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/vbl-core/5cf8bbfc-13f1-4704-9aed-e7dd72243f8e/_packaging/VanquisEngineering/nuget/v3/index.json": {},
-          "https://vbl-core.pkgs.visualstudio.com/_packaging/Crm-Dynamics/nuget/v3/index.json": {},
-          "https://vbl-core.pkgs.visualstudio.com/_packaging/Eml-Packages%40Local/nuget/v3/index.json": {},
-          "https://vbl-core.pkgs.visualstudio.com/_packaging/VBLCommercialNuGet/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -44,6 +40,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.9.4, )"
@@ -79,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

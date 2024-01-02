@@ -1,33 +1,49 @@
-﻿using System;
+﻿using CandidateCodeTest.Contracts;
+using System;
 
-namespace CandidateCodeTest
+public class CustomerService
 {
-    public class CustomerService
+    private readonly IEmailService _emailService;
+    private readonly ITimeRangeService _timeRangeService;
+
+    public CustomerService(IEmailService emailService, ITimeRangeService timeRangeService)
     {
-        public bool HasEmailBeenSent()
-        {
-            MessageService messageService = new MessageService();
-
-            TimeSpan start = new TimeSpan(10, 0, 0); 
-            TimeSpan end = new TimeSpan(12, 0, 0); 
-            TimeSpan now = DateTime.Now.TimeOfDay;
-
-            if ((now > start) && (now < end))
-            {
-                messageService.SendEmail();
-                return true;
-            }
-            else
-                return false;
-        }
+        _emailService = emailService;
+        _timeRangeService = timeRangeService;
     }
 
-    public class MessageService
+    public bool TrySendEmail(string recipient, string subject, string message, bool checkTimeRange = false)
     {
-        public void SendEmail()
+        try
         {
-            // Code that will send the email
-            Console.WriteLine("Email Sent to customer");
+            var addr = new System.Net.Mail.MailAddress(recipient);
+            if (addr.Address != recipient)
+            {
+                Console.WriteLine("Invalid email address format.");
+                return false;
+            }
         }
+        catch
+        {
+            Console.WriteLine("Invalid email address format.");
+            return false;
+        }
+
+        if (checkTimeRange)
+        {
+            TimeSpan start = new TimeSpan(10, 0, 0); // start time
+            TimeSpan end = new TimeSpan(12, 0, 0); // end time
+
+            if (!_timeRangeService.IsWithinTimeRange(start, end))
+            {
+                Console.WriteLine("It's not the right time to send an email.");
+                return false;
+            }
+        }
+
+        _emailService.SendEmail(recipient, subject, message);
+        return true;
     }
 }
+
+

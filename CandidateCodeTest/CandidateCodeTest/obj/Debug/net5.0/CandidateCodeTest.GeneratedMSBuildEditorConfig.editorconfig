@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CandidateCodeTest
-build_property.ProjectDir = C:\Users\UdayakuV\Downloads\CandidateCodeTest\CandidateCodeTest\CandidateCodeTest\
+build_property.ProjectDir = C:\Users\nisha\Source\Repos\CodeTestNISHANT-SHARMA\CandidateCodeTest\CandidateCodeTest\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

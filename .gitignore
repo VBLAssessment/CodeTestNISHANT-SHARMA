@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CandidateCodeTest/.vs/CandidateCodeTest/FileContentIndex
+/.vs/VSWorkspaceState.json
+/CandidateCodeTest/.vs/CandidateCodeTest/v17
